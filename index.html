@@ -14335,7 +14335,7 @@ function helpView() {
     `<div class="help-intro"><p>Η εφαρμογή καταγράφει τις <strong>διδακτικές ώρες που δεν πραγματοποιήθηκαν</strong> (και για ποιον λόγο), τις <strong>αναπληρώσεις</strong>, τα <strong>διαγωνίσματα</strong> και τις <strong>συμμετοχές μαθητών</strong> σε διαγωνισμούς, πρόβες και αγώνες. Από αυτά βγαίνουν τα στατιστικά του σχολείου: πόσες ώρες χάθηκαν ανά τμήμα και μάθημα, για ποιους λόγους και πόσες αναπληρώθηκαν.</p><p>Καταγράφετε μόνο ό,τι <strong>δεν</strong> έγινε όπως στο πρόγραμμα. Όσες ώρες δεν καταγράφονται θεωρείται ότι πραγματοποιήθηκαν κανονικά. Οι καταγραφές όλων συγκεντρώνονται σε ένα κοινό αρχείο.</p><p><button type="button" class="help-pdf" onclick="openGuide()">📖 Αναλυτικός οδηγός με εικόνες</button></p></div>
 ${step(
   '1. Ώρα που δεν έγινε',
-  `<p><strong>Καταγραφή ωρών</strong> → «Ώρες που δεν έγιναν» → ημερομηνία → αιτία → τμήματα → μαθήματα → ώρες → <strong>Αποθήκευση καταγραφής</strong>.</p><p>Για μία ημέρα, με «Συγκεκριμένα μαθήματα ανά τμήμα», δίπλα σε κάθε μάθημα φαίνονται οι ώρες του και τις επιλέγετε εκεί.</p><p><strong>Τι καταγράφουν οι χρήστες:</strong> τα μαθήματα που δεν έγιναν σε κάποια ώρα (π.χ. Συνεδρίαση Συλλόγου Διδασκόντων, σχολική εορτή, εκδρομή), μία ημέρα κάθε φορά, με μία αιτία. Ό,τι αφορά όλη την ημέρα ή τον εκπαιδευτικό (άδεια, απουσία, κενό ή επιμόρφωση εκπαιδευτικού, συνοδεία μαθητών, υπηρεσιακή υποχρέωση εκπαιδευτικού, απεργία / στάση εργασίας, κατάληψη, βουλευτικές / αυτοδιοικητικές εκλογές, πολιούχος / τοπική αργία, φυσικές καταστροφές, δυσμενείς καιρικές συνθήκες), καθώς και τα διαστήματα ημερών, τα καταχωρίζει ο διαχειριστής.</p><p><strong>Από πριν:</strong> ο διαχειριστής καταγράφει και για επόμενες ημέρες, με οποιαδήποτε αιτία, στις «Ώρες που δεν έγιναν» και στις «Ώρες που έγιναν ελλιπώς»· έτσι τροποποιεί από πριν και το πρόγραμμα της ημέρας. Οι χρήστες καταγράφουν την ημέρα που έγιναν οι ώρες ή αργότερα.</p><p><strong>Άλλαξε το πρόγραμμα της ημέρας;</strong> (π.χ. λείπει εκπαιδευτικός και τα μαθήματα μετακινήθηκαν στις κενές ώρες) Το πρόγραμμα της ημέρας το τροποποιεί μόνο ο διαχειριστής· γίνεται και από πριν. Ένα μάθημα μπορεί να γίνει και άλλη ημέρα της ίδιας εβδομάδας (π.χ. τα Θρησκευτικά της Παρασκευής την Τετάρτη 1η): φαίνεται και στις δύο ημέρες, και καταγράφεται την ημέρα που γίνεται. Στην Καταγραφή ωρών, κάτω από τα τμήματα, μια γραμμή για κάθε τμήμα λέει αν άλλαξαν οι ώρες του («τροποποιημένο», με τον λόγο) ή όχι («όπως το ωρολόγιο»). Οι ώρες δίπλα σε κάθε μάθημα είναι ήδη οι ώρες της ημέρας. Αν το πρόγραμμα άλλαξε αλλά δεν φαίνεται, ενημερώστε τον διαχειριστή· η καταγραφή γίνεται κανονικά.</p><p><strong>Ενιαίο τμήμα:</strong> όταν μέρος της τάξης λείπει (π.χ. πολυήμερη εκδρομή), όσοι μένουν κάνουν μάθημα σε ένα τμήμα (π.χ. «Γ» αντί για Γ1, Γ2 και τις ομάδες). Το ορίζει ο διαχειριστής στο Πρόγραμμα ημέρας (για μία ή περισσότερες ημέρες με εκδρομή, επίσκεψη, αθλητική δράση ή φεστιβάλ) και στην Καταγραφή ωρών φαίνεται ως «Ενιαίο τμήμα «Γ»» με το μάθημα κάθε ώρας. Η δράση καταγράφεται για όλη την τάξη· για τις ώρες του ενιαίου τμήματος δεν γράφεται τίποτα.</p><p><strong>Σύλλογος, εορτή, εκδρομή κ.λπ.:</strong> καταγράψτε την ώρα που έγιναν. Η απώλεια μένει στο μάθημα που καταγράψατε: αν ο διαχειριστής μετακινήσει αργότερα το μάθημα (π.χ. από την 3η στην 1η), η απώλεια πηγαίνει μαζί του.</p><p class="muted">Πριν την αποθήκευση, η προεπισκόπηση δείχνει τι θα γραφτεί. Αν η ώρα έχει ήδη καταγραφεί από άλλον, το βλέπετε εκεί και μπορείτε να την προσθέσετε ως επιπλέον αιτία.</p>`
+  `<p><strong>Καταγραφή ωρών</strong> → «Ώρες που δεν έγιναν» → ημερομηνία → αιτία → τμήματα → μαθήματα → ώρες → <strong>Αποθήκευση καταγραφής</strong>.</p><p>Για μία ημέρα, με «Συγκεκριμένα μαθήματα ανά τμήμα», δίπλα σε κάθε μάθημα φαίνονται οι ώρες του και τις επιλέγετε εκεί.</p><p><strong>Τι καταγράφουν οι χρήστες:</strong> τα μαθήματα που δεν έγιναν σε κάποια ώρα (π.χ. Συνεδρίαση Συλλόγου Διδασκόντων, σχολική εορτή, εκδρομή), μία ημέρα κάθε φορά, με μία αιτία. Ό,τι αφορά όλη την ημέρα ή τον εκπαιδευτικό (άδεια, απουσία, κενό ή επιμόρφωση εκπαιδευτικού, συνοδεία μαθητών, υπηρεσιακή υποχρέωση εκπαιδευτικού, απεργία / στάση εργασίας, κατάληψη, βουλευτικές / αυτοδιοικητικές εκλογές, πολιούχος / τοπική αργία, φυσικές καταστροφές, δυσμενείς καιρικές συνθήκες), καθώς και τα διαστήματα ημερών, τα καταχωρίζει ο διαχειριστής.</p><p><strong>Από πριν:</strong> ο διαχειριστής καταγράφει και για επόμενες ημέρες, με οποιαδήποτε αιτία, στις «Ώρες που δεν έγιναν» και στις «Ώρες που έγιναν ελλιπώς»· έτσι τροποποιεί από πριν και το πρόγραμμα της ημέρας. Οι χρήστες καταγράφουν την ημέρα που έγιναν οι ώρες ή αργότερα.</p><p><strong>Άλλαξε το πρόγραμμα της ημέρας;</strong> (π.χ. λείπει εκπαιδευτικός και τα μαθήματα μετακινήθηκαν στις κενές ώρες) Το πρόγραμμα της ημέρας το τροποποιεί μόνο ο διαχειριστής· γίνεται και από πριν. Ένα μάθημα μπορεί να γίνει και άλλη ημέρα της ίδιας εβδομάδας (π.χ. τα Θρησκευτικά της Παρασκευής την Τετάρτη 1η): φαίνεται και στις δύο ημέρες, και καταγράφεται την ημέρα που γίνεται. Στην Καταγραφή ωρών, κάτω από τα τμήματα, μια γραμμή για κάθε τμήμα λέει αν άλλαξαν οι ώρες του («τροποποιημένο», με τον λόγο) ή όχι («όπως το ωρολόγιο»). Οι ώρες δίπλα σε κάθε μάθημα είναι ήδη οι ώρες της ημέρας. Αν το πρόγραμμα άλλαξε αλλά δεν φαίνεται, ενημερώστε τον διαχειριστή· η καταγραφή γίνεται κανονικά.</p><p><strong>Ενιαίο τμήμα:</strong> όταν μέρος της τάξης λείπει (π.χ. πολυήμερη εκδρομή), όσοι μένουν κάνουν μάθημα σε ένα τμήμα (π.χ. «Γ» αντί για Γ1, Γ2 και τις ομάδες). Το ορίζει ο διαχειριστής στο Πρόγραμμα ημέρας (για μία ή περισσότερες ημέρες με εκδρομή, επίσκεψη, αθλητική δράση ή φεστιβάλ) και στην Καταγραφή ωρών φαίνεται ως «Ενιαίο τμήμα «Γ»» με το μάθημα κάθε ώρας. Η δράση καταγράφεται για όλη την τάξη· για τις ώρες του ενιαίου τμήματος δεν γράφεται τίποτα.</p><p><strong>Σύλλογος, εορτή, εκδρομή κ.λπ.:</strong> καταγράψτε τις ώρες που έγιναν. Η απώλεια μένει σε αυτές τις ώρες: αν ο διαχειριστής αλλάξει αργότερα το πρόγραμμα της ημέρας (π.χ. το μάθημα της 3ης πάει στην 7η), χαμένο μετρά το μάθημα που βρίσκεται πια στις ώρες της δράσης. Η άδεια, η απουσία κ.λπ. του εκπαιδευτικού μένουν στο μάθημά του.</p><p class="muted">Πριν την αποθήκευση, η προεπισκόπηση δείχνει τι θα γραφτεί. Αν η ώρα έχει ήδη καταγραφεί από άλλον, το βλέπετε εκεί και μπορείτε να την προσθέσετε ως επιπλέον αιτία.</p>`
 )}
 ${step(
   '2. Διαγώνισμα στη δική του ώρα',
@@ -14718,8 +14718,10 @@ function logMoveNotes(plan, fresh, existing, moveOf, act) {
    κάθε μετακινημένο μάθημα με την ώρα του ωρολογίου (hour) και την ώρα σήμερα (movedHour). Οι παλιές εκδόσεις τη
    δέχονται ως κανονική καταγραφή. Στα στατιστικά δεν μετρά (οι προβλεπόμενες ώρες μένουν ίδιες)· οι επόμενες
    καταγραφές της ημέρας (και οι Αναπληρώσεις) πατούν στις ώρες του προγράμματος της ημέρας.
-   Η απώλεια μένει πάντα στο μάθημα που καταγράφηκε: αν ο διαχειριστής μετακινήσει αργότερα το μάθημα (π.χ.
-   Θρησκευτικά με Σύλλογο την 3η → 1η), η απώλεια πάει μαζί του. Οι αιτίες που χάνουν το ΜΑΘΗΜΑ λόγω εκπαιδευτικού
+   Ως την 2.5 (πρωί) η απώλεια έμενε πάντα στο μάθημα που καταγράφηκε. 2.5: οι αιτίες του σχολείου (Σύλλογος, Δήμος,
+   εορτή, δράσεις κ.λπ.) πιάνουν ΩΡΕΣ: χαμένο μετρά το μάθημα που βρίσκεται στις ώρες της δράσης· όταν ο διαχειριστής
+   αλλάζει το πρόγραμμα της ημέρας, οι καταγραφές τους ξαναγράφονται με τα μαθήματα των ωρών αυτών (dayHourLossRewrite).
+   Οι αιτίες που χάνουν το ΜΑΘΗΜΑ λόγω εκπαιδευτικού
    (άδεια, απουσία, κενό εκπαιδευτικού, απεργία) δημιουργούν κενά: το μάθημα δεν μπαίνει σε καμία ώρα και η ώρα του
    ελευθερώνεται· δηλώνονται και από πριν. Με τις άλλες αιτίες (Σύλλογος, εορτή κ.λπ.) το μάθημα κρατά τη θέση του
    και μπορεί να μετακινηθεί, χαμένο.
@@ -14897,13 +14899,34 @@ function dayState(date, gid, events = data.events) {
         recAt: at.find(o => o.x.movedHour)?.x.movedHour || 0
       };
     L.lostUnplaced = L.lessonLost && !L.to && !L.recAt;
+    // 2.5: χαμένο μόνο λόγω δράσης του σχολείου (πιάνει την ώρα, όχι το μάθημα)
+    L.hourOnly = L.lost && !L.lessonLost;
     // 2.4 (τελική): μάθημα από άλλη ημέρα σε ώρα που άδειασε (s.atHour): εκεί, όχι στην ώρα του ωρολογίου που «κρατά»
     L.pos = L.to || L.recAt || (L.lostUnplaced ? 0 : L.s.atHour || L.hour);
     return L;
   });
   // χαμένο μάθημα σε ώρα όπου μπήκε άλλο: δεν είναι πια σε καμία ώρα
   for (const L of lessons) L.act = L.pos || (lessons.some(M => M.pos === L.hour) ? 0 : L.hour);
-  return { date, gid, base, plans, lessons };
+  // 2.5: ώρες δράσεων του σχολείου (ώρα σήμερα → αιτίες): ό,τι μάθημα βρίσκεται εκεί μετρά χαμένο
+  const eventHours = new Map(),
+    addEv = (h, e) => eventHours.set(h, [...new Set([...(eventHours.get(h) || []), recordingLabel(e)])]);
+  for (const L of lessons) for (const o of L.recs) if (L.act && isHourLoss(o.e)) addEv(L.act, o.e);
+  // και όσες ώρες της δράσης έμειναν χωρίς μάθημα (τις κρατά η καταγραφή στο eventHours)
+  for (const e of recs) if (isHourLoss(e)) for (const h of dayEventHoursOf(e, gid)) addEv(h, e);
+  return { date, gid, base, plans, lessons, eventHours };
+}
+// 2.5: οι ώρες της δράσης για ένα τμήμα, όπως τις κράτησε η εφαρμογή όταν άλλαξε το πρόγραμμα (eventHours: { τμήμα: [ώρες] })
+function dayEventHoursOf(e, gid) {
+  const v = e?.eventHours && typeof e.eventHours === 'object' ? e.eventHours[gid] : null;
+  return Array.isArray(v) ? [...new Set(v.filter(h => Number.isInteger(h) && h >= 1 && h <= 7))] : [];
+}
+// 2.5: απώλεια με αιτία του σχολείου (όχι του εκπαιδευτικού): ακολουθεί τις ώρες της δράσης
+function isHourLoss(e) {
+  return !!e && !isDayPlan(e) && (e.type || 'loss') === 'loss' && !isLessonLoss(e) && e.scheduleMode !== 'manual';
+}
+// καταγραφή που κρατά το μάθημα στην ώρα του: «έγινε» / «ελλιπώς», ή απώλεια εκπαιδευτικού που έγινε με το πρόγραμμα της ημέρας
+function dayRecFixes(o) {
+  return (o.e.type || 'loss') !== 'loss' || (!!o.x.movedHour && !isHourLoss(o.e));
 }
 /* ---------- τμήματα με κοινούς μαθητές ----------
    Δεν γίνεται μάθημα την ίδια ώρα σε δύο τμήματα / ομάδες με κοινούς μαθητές. Ποια έχουν κοινούς μαθητές το λένε
@@ -14970,7 +14993,7 @@ function dayFixedAt(L, mine = true, unit = null) {
   if (L.lostUnplaced) return 0;
   if (L.s.atHour) return L.recAt || L.s.atHour; // 2.4 (τελική): μάθημα από άλλη ημέρα σε ώρα που άδειασε: μένει εκεί
   if (L.s.joint && !(unit && dayJointGroups(L.s.joint).every(g => unit.includes(g)))) return L.hour;
-  if (L.recs.some(o => (o.e.type || 'loss') !== 'loss' || o.x.movedHour)) return L.recAt || L.to || L.hour;
+  if (L.recs.some(dayRecFixes)) return L.recAt || L.to || L.hour;
   if (L.plan && !mine) return L.to;
   return 0;
 }
@@ -14996,7 +15019,7 @@ function dayPlanCheck(st, assign, unit = null) {
     if (!at.length) {
       issues.push(
         who(L) +
-          (L.lost
+          (L.lost && !L.hourOnly
             ? ': έχει καταγραφεί ως χαμένο (' + L.lossLabel + ') και η απώλεια πηγαίνει μαζί του· βάλτε το σε μία ώρα.'
             : ': δεν έχει ώρα σήμερα. Αν δεν έγινε, καταγράψτε το πρώτα ως χαμένο.')
       );
@@ -15013,7 +15036,7 @@ function dayPlanCheck(st, assign, unit = null) {
           'η (' +
           (L.s.joint
             ? 'συνδιδασκαλία με τμήμα άλλης τάξης'
-            : L.recs.some(o => (o.e.type || 'loss') !== 'loss' || o.x.movedHour)
+            : L.recs.some(dayRecFixes)
               ? 'έχει ήδη καταγραφή'
               : 'τη μετακίνηση την έκανε άλλος χρήστης') +
           ').'
@@ -15067,10 +15090,11 @@ function dayUnitCheck(us, assigns) {
         );
     }
   // κοινοί μαθητές: μάθημα που μετακινήθηκε δεν μπαίνει σε ώρα όπου έχει μάθημα τμήμα με κοινούς μαθητές
+  // 2.5: σε ώρα δράσης του σχολείου το μάθημα χάνεται (οι μαθητές δεν είναι στην τάξη)· έξω από αυτήν γίνεται κανονικά
   const active = (g, h) => {
     const k = assigns.get(g).get(h),
       L = k && lesson(g, k);
-    return !!L && !L.lost;
+    return !!L && !(L.lost && !L.hourOnly) && !us.sts.get(g).eventHours.has(h);
   };
   const clash = new Set();
   for (const g of us.gids)
@@ -15457,7 +15481,7 @@ function dayOptionsHTML(st, h, cur, unit) {
     .filter(L => !L.lostUnplaced && (!fixed(L) || fixed(L) === h))
     .map(
       L =>
-        `<option value="${L.hour}" ${cur === L.hour ? 'selected' : ''}>${esc(L.name)}${L.s.joint ? ' ↔' : ''}${L.s.movedFrom ? ' (από ' + esc(moveShort(L.s.movedFrom)) + ')' : L.hour !== h ? ' (' + L.hour + 'η)' : ''}${L.lost ? ' · χαμένη' : ''}</option>`
+        `<option value="${L.hour}" ${cur === L.hour ? 'selected' : ''}>${esc(L.name)}${L.s.joint ? ' ↔' : ''}${L.s.movedFrom ? ' (από ' + esc(moveShort(L.s.movedFrom)) + ')' : L.hour !== h ? ' (' + L.hour + 'η)' : ''}${L.lost && !L.hourOnly ? ' · χαμένη' : ''}</option>`
     )
     .join('');
 }
@@ -15465,20 +15489,23 @@ function dayOptionsHTML(st, h, cur, unit) {
 function dayRowsHTML(st) {
   const a = planEdit.assigns.get(st.gid),
     unit = [st.gid],
+    // 2.5: η απώλεια λόγω δράσης φαίνεται στην ώρα της δράσης (ό,τι μάθημα μπει εκεί χάνεται), όχι στο μάθημα
     note = L =>
-      L.lost
-        ? 'χαμένη · ' + L.lossLabel + (L.lostUnplaced ? '' : ' (μετακινείται μαζί με το μάθημα)')
+      L.lost && !L.hourOnly
+        ? 'χαμένη · ' + L.lossLabel
         : L.s.joint
           ? 'συνδιδασκαλία με άλλο τμήμα'
-          : L.recs.length
+          : L.recs.length && !L.hourOnly
             ? 'έχει καταγραφή'
-            : '';
+            : '',
+    evNote = h =>
+      st.eventHours.has(h) ? `<small class="lost">ώρα δράσης · ${esc(st.eventHours.get(h).join(', '))}</small>` : '';
   const rows = [1, 2, 3, 4, 5, 6, 7]
     .map(h => {
       const orig = st.lessons.find(L => L.hour === h && !L.s.atHour),
         cur = a.get(h) || 0,
         fixedHere = st.lessons.find(L => dayFixedAt(L, true, unit) === h);
-      return `<div class="dp-row${cur && cur !== h ? ' moved' : ''}${!cur ? ' empty' : ''}"><span class="dp-h">${h}η</span><span class="dp-orig">${orig ? esc(orig.name) : '<span class="muted">—</span>'}${orig && note(orig) ? `<small${orig.lost ? ' class="lost"' : ''}>${esc(note(orig))}</small>` : ''}</span><select data-dpg="${st.gid}" data-dph="${h}" aria-label="${h}η ώρα σήμερα" ${fixedHere ? 'disabled' : ''} onchange="dayPlanPick(${h},this.value,'${st.gid}')"><option value="">κενό</option>${dayOptionsHTML(st, h, cur, unit)}</select></div>`;
+      return `<div class="dp-row${cur && cur !== h ? ' moved' : ''}${!cur ? ' empty' : ''}"><span class="dp-h">${h}η</span><span class="dp-orig">${orig ? esc(orig.name) : '<span class="muted">—</span>'}${orig && note(orig) ? `<small${orig.lost ? ' class="lost"' : ''}>${esc(note(orig))}</small>` : ''}${evNote(h)}</span><select data-dpg="${st.gid}" data-dph="${h}" aria-label="${h}η ώρα σήμερα" ${fixedHere ? 'disabled' : ''} onchange="dayPlanPick(${h},this.value,'${st.gid}')"><option value="">κενό</option>${dayOptionsHTML(st, h, cur, unit)}</select></div>`;
     })
     .join('');
   return `<div class="dp-rows"><div class="dp-row dp-head-row"><span class="dp-h">Ώρα</span><span class="dp-orig">Ωρολόγιο</span><span>Σήμερα</span></div>${rows}</div>`;
@@ -15501,8 +15528,12 @@ function dayGridHTML(us) {
       orig = st.lessons.find(L => L.hour === h && !L.s.atHour),
       fixedHere = st.lessons.find(L => dayFixedAt(L, true, us.gids) === h),
       notes = [];
-    if (orig?.lost) notes.push(`<small class="lost">χαμένη: ${esc(orig.name)} · ${esc(orig.lossLabel)}</small>`);
+    if (orig?.lost && !orig.hourOnly)
+      notes.push(`<small class="lost">χαμένη: ${esc(orig.name)} · ${esc(orig.lossLabel)}</small>`);
     else if (orig && cur !== h) notes.push(`<small>ωρολόγιο: ${esc(orig.name)}</small>`);
+    // 2.5: ώρα δράσης του σχολείου: ό,τι μάθημα μπει εδώ χάνεται
+    if (st.eventHours.has(h))
+      notes.push(`<small class="lost">ώρα δράσης · ${esc(st.eventHours.get(h).join(', '))}</small>`);
     return `<td class="${cur && cur !== h ? 'moved' : ''}${!cur ? ' empty' : ''}"><select data-dpg="${g}" data-dph="${h}" aria-label="${esc(gname(g))} ${h}η" ${fixedHere ? 'disabled' : ''} onchange="dayPlanPick(${h},this.value,'${g}')"><option value="">—</option>${dayOptionsHTML(st, h, cur, us.gids)}</select>${notes.join('')}</td>`;
   };
   return `<div class="dp-grid-wrap"><table class="dp-grid"><thead><tr><th>Ώρα</th>${us.gids.map(g => `<th class="side-${daySideOf(g)}">${esc(gname(g))}</th>`).join('')}</tr></thead><tbody>${[
@@ -15591,6 +15622,103 @@ function dayPlanReset() {
   ed.dirty = true;
   dayPlanRefresh();
 }
+// 2.5: μετά από αλλαγή του προγράμματος της ημέρας (before → after), οι καταγραφές με αιτία του σχολείου ξαναγράφονται:
+// χαμένα είναι τα μαθήματα που βρίσκονται πια στις ώρες της δράσης (οι ώρες όπου ήταν ως τώρα τα χαμένα μαθήματά της).
+// Μάθημα με άλλη καταγραφή («έγινε», «ελλιπώς», αιτία εκπαιδευτικού) δεν μπαίνει. Καταγραφή χωρίς μάθημα διαγράφεται.
+function dayHourLossRewrite(date, gids, before, after) {
+  const now = new Date().toISOString(),
+    upd = new Map(),
+    changes = [],
+    names = list => list.map(L => L.name).join(', '),
+    byHour = (list, at) => [...list].sort((a, b) => (at(a) || 9) - (at(b) || 9));
+  for (const g of gids) {
+    const old = dayState(date, g, before),
+      recs = [
+        ...new Set([
+          ...old.lessons.flatMap(L => L.recs.map(o => o.e)),
+          ...before.filter(e => e.date === date && e.calendarPolicy !== 'exclude' && dayEventHoursOf(e, g).length)
+        ])
+      ].filter(isHourLoss);
+    if (!recs.length) continue;
+    const pos = new Map(
+        dayState(
+          date,
+          g,
+          after.filter(e => !recs.includes(e))
+        ).lessons.map(L => [L.hour, L.act])
+      ),
+      free = L => L.recs.every(o => recs.includes(o.e));
+    for (const e of recs) {
+      const cur = upd.get(e) || e,
+        mine = old.lessons.filter(L => L.recs.some(o => o.e === e)),
+        H = new Set([...dayEventHoursOf(cur, g), ...mine.map(L => L.act).filter(Boolean)]),
+        keep = old.lessons.filter(L =>
+          mine.includes(L) ? H.has(pos.get(L.hour)) || (!L.act && !pos.get(L.hour)) : free(L) && H.has(pos.get(L.hour))
+        ),
+        snap = L =>
+          withMove(
+            {
+              ...withoutMove(
+                cur.slotSnapshots.find(x => !x.manual && x.groupId === g && x.hour === L.hour) || {
+                  ...L.s,
+                  subjectName: L.name
+                }
+              )
+            },
+            () => pos.get(L.hour) || 0
+          ),
+        mineSnaps = cur.slotSnapshots.filter(x => !x.manual && x.groupId === g),
+        next = keep.map(snap).sort((a, b) => a.hour - b.hour),
+        key = list => J2(list.map(x => x.hour + ':' + (x.movedHour || 0)).sort());
+      if (key(mineSnaps) === key(next)) continue;
+      // το πρόγραμμα της ημέρας που κράτησε η καταγραφή (programGroupIds, dayProgramSnapshots) μένει ίδιο
+      const slotSnapshots = [...cur.slotSnapshots.filter(x => !mineSnaps.includes(x)), ...next],
+        groupIds = [...new Set([...cur.groupIds, g])].filter(id => slotSnapshots.some(x => x.groupId === id));
+      upd.set(e, {
+        ...cur,
+        groupIds,
+        hours: [...new Set(slotSnapshots.map(x => x.hour))].sort((a, b) => a - b),
+        slotSnapshots,
+        eventHours: {
+          ...(cur.eventHours && typeof cur.eventHours === 'object' ? cur.eventHours : {}),
+          [g]: [...H].sort((a, b) => a - b)
+        },
+        updatedAt: now,
+        ...editorFields(cur.by)
+      });
+      changes.push(
+        recordingLabel(e) +
+          ' · ' +
+          gname(g) +
+          ' (' +
+          [...H]
+            .sort((a, b) => a - b)
+            .map(h => h + 'η')
+            .join(', ') +
+          '): χαμένα ' +
+          (names(byHour(mine, L => L.act)) || 'κανένα') +
+          ' → ' +
+          (names(byHour(keep, L => pos.get(L.hour))) || 'κανένα μάθημα') +
+          (slotSnapshots.length ? '' : ' (η καταγραφή διαγράφεται)')
+      );
+    }
+  }
+  return {
+    events: after.flatMap(e => (!upd.has(e) ? [e] : upd.get(e).slotSnapshots.length ? [upd.get(e)] : [])),
+    changes
+  };
+}
+function dayHourLossConfirm(changes) {
+  return (
+    !changes.length ||
+    confirm(
+      'Αλλάζουν και οι χαμένες ώρες των δράσεων: χαμένο μετρά το μάθημα που βρίσκεται στις ώρες της δράσης.\n' +
+        changes.map(x => '• ' + x).join('\n') +
+        '\n\nΣυνέχεια;'
+    )
+  );
+}
+const DAY_CANCEL = 'άκυρο';
 function dayPlanSlot(L, h) {
   return { ...withoutMove(L.s), subjectName: L.name, movedHour: h };
 }
@@ -15662,6 +15790,8 @@ function dayPlanApply(date, gids, assigns, reason = '', other = '') {
         .sort((a, b) => a.hour - b.hour)
     });
   }
+  const rw = dayHourLossRewrite(date, gids, data.events, events);
+  events = rw.events;
   for (const g of gids)
     if (us.sts.get(g).plans.length && !dayPlanEvents(date, g, events).length) {
       const rec = dayPlanDependents(date, g, events)[0];
@@ -15680,6 +15810,7 @@ function dayPlanApply(date, gids, assigns, reason = '', other = '') {
   } catch (err) {
     return 'Το πρόγραμμα δεν αποθηκεύτηκε: ' + err.message;
   }
+  if (!dayHourLossConfirm(rw.changes)) return DAY_CANCEL;
   data.events = events;
   occCache = new Map();
   return '';
@@ -15688,6 +15819,7 @@ function dayPlanSave() {
   const ed = planEdit;
   if (!ed) return;
   const err = dayPlanApply(ed.date, ed.gids, ed.assigns, ed.reason, ed.other);
+  if (err === DAY_CANCEL) return;
   if (err) return warn(err);
   planEdit = null;
   render();
@@ -15724,6 +15856,29 @@ function dayAdminBoxHTML() {
     if (gp.length) notes.push((many ? gname(g) + ': ' : '') + dayGapsText(gp));
   }
   for (const g of gids) for (const t of moveNotes(apDate, g)) notes.push((many ? gname(g) + ': ' : '') + t);
+  // 2.5: ώρες δράσεων του σχολείου (χαμένο μετρά ό,τι βρίσκεται εκεί)
+  const ev = gids
+    .map(g => {
+      const by = new Map();
+      for (const [h, rs] of us.sts.get(g).eventHours) for (const r of rs) by.set(r, [...(by.get(r) || []), h]);
+      return [...by].map(
+        ([r, hs]) =>
+          (many ? gname(g) + ' ' : '') +
+          hs
+            .sort((a, b) => a - b)
+            .map(h => h + 'η')
+            .join(', ') +
+          ' · ' +
+          r
+      );
+    })
+    .flat();
+  if (ev.length)
+    notes.push(
+      'Ώρες δράσης: ' +
+        ev.join('; ') +
+        '. Χαμένο μετρά το μάθημα που βρίσκεται σε αυτές τις ώρες· αν το μετακινήσετε αλλού, γίνεται κανονικά.'
+    );
   return `<div class="day-plan admin">${title}${choice}${notes.map(n => `<p class="dp-note">${esc(n)}</p>`).join('')}${dayPlanEditorHTML()}${moveFormHTML(apDate, apGrade)}</div>`;
 }
 // δεν χάνονται σιωπηλά αλλαγές του πίνακα που δεν αποθηκεύτηκαν
@@ -15869,7 +16024,13 @@ function dayAdminDelete(date, gid) {
   const unit = dayUnit(gid),
     plans = data.events.filter(e => isDayPlan(e) && e.date === date && e.groupIds.some(g => unit.includes(g)));
   if (!plans.length) return;
-  const next = data.events.filter(e => !plans.includes(e)),
+  const rw = dayHourLossRewrite(
+      date,
+      unit,
+      data.events,
+      data.events.filter(e => !plans.includes(e))
+    ),
+    next = rw.events,
     why = dayPlanBreaks(plans, next);
   if (why) return warn(why);
   if (
@@ -15878,7 +16039,11 @@ function dayAdminDelete(date, gid) {
         dayGradeLabel(dayPlanUnitGids(date, gid)) +
         ', ' +
         dayLabel(date) +
-        ');'
+        ');' +
+        (rw.changes.length
+          ? '\n\nΑλλάζουν και οι χαμένες ώρες των δράσεων: χαμένο μετρά το μάθημα που βρίσκεται στις ώρες της δράσης.\n' +
+            rw.changes.map(x => '• ' + x).join('\n')
+          : '')
     )
   )
     return;
